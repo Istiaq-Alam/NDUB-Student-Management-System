@@ -28,7 +28,7 @@ NUDUB Student Management System is a comprehensive web application designed spec
 - **Data Management :** Admins have full control over student data, allowing them to update information as needed, ensuring data accuracy and integrity.
 
 ## Run Locally
-- Clone the project into `htdocs` folder
+- Copy / Clone the project into `htdocs` folder
 
 ```bash
   git clone https://github.com/Istiaq-Alam/NDUB-Student-Management-System.git
@@ -39,7 +39,7 @@ NUDUB Student Management System is a comprehensive web application designed spec
 ```bash
   cd NDUB-Student-Management-System
 ```
-
+- Copy the Project folder named `StudentManagementSystem` and paste it on `htdocs` folder
 - Launch Xampp and start Apache MySQL server
 - Go to PHPMyadmin and create a new database named `srms`
 - In the `srms` database import the SQL file.
