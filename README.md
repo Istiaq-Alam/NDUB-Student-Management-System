@@ -97,7 +97,7 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 ![19adminPass](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/298440f4-1cea-4d92-bee6-49e1438056a6)
 
 
-NUDUB Student Management System aims to simplify academic management for both students and administrators, ensuring a smooth and efficient academic experience at Notre Dame University Bangladesh. 📡
+NDUB Student Management System aims to simplify academic management for both students and administrators, ensuring a smooth and efficient academic experience at Notre Dame University Bangladesh. 📡
 ## ✅ Feedback 💭
 
 If you have any feedback, please reach out to us at istiaqlm@gmail.com
