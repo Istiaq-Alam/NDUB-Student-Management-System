@@ -1,21 +1,21 @@
 
-# NDUB-Student-Management-System
+# NDUB-Student-Management-System 💠📚
 
-NUDUB Student Management System is a comprehensive web application designed specifically for students of Notre Dame University Bangladesh to manage their academic information efficiently. It provides a user-friendly interface for students to access their results and percentages, while administrators can easily handle student data, course management, and result updates.
-
-
-## Go to the Website -
- - [NDUB Student Management System](https://ndubstudentportal.000webhostapp.com/index.php)
+NUDUB Student Management System is a comprehensive web application designed specifically for students of Notre Dame University Bangladesh to manage their academic information efficiently. It provides a user-friendly interface for students to access their results and percentages, while administrators can easily handle student data, course management, and result updates 📆📡
 
 
+## 🔰 Go to the Website 🔰
+ - 📡 [NDUB Student Management System](https://ndubstudentportal.000webhostapp.com/index.php)
 
-## ------------------------------ Key Features:-----------------------------
 
- ###  **Student Portal :** 
+
+## ---------------------------------------- Key Features -----------------------------------------
+
+ ###  **🔰 Student Portal :** 
 - **Result and Percentage Lookup :** Students can easily search and view their results and overall percentages for each semester. 
 - View a clear and concise overview of their academic performance.
 
-###  **Admin Dashboard :**
+###  **🔰 Admin Dashboard :**
 - Administrators have access to a dedicated dashboard where they can manage all aspects of the system, including student information, course combinations, and result management.
 - Secure login for authorized administrators.
 - Add student information, including details relevant to each semester.
@@ -27,7 +27,7 @@ NUDUB Student Management System is a comprehensive web application designed spec
 - **Individual Result Entry :** Admins can input individual results for every registered student, ensuring timely and accurate recording of academic performance.
 - **Data Management :** Admins have full control over student data, allowing them to update information as needed, ensuring data accuracy and integrity.
 
-## Run Locally
+## 🔌 Run Locally
 - Download zip / Clone the project into `htdocs` folder
 
 ```bash
@@ -47,7 +47,7 @@ NUDUB Student Management System is a comprehensive web application designed spec
 - Go to site `http://localhost/StudentManagementSystem` and Explore the Website. 🤯
 
 
-## Advantages
+## 💯 Advantages
 - **Improved Accessibility :** Students can access their results anytime, anywhere, with an internet connection.
 - **Enhanced Transparency :** Students gain a clearer understanding of their academic progress.
 - **Increased Efficiency :** Administrators can manage student data and results in a centralized and efficient manner.
@@ -55,15 +55,15 @@ NUDUB Student Management System is a comprehensive web application designed spec
 - **Time-Saving :** Streamlines the process of result retrieval and data management for both students and administrators.
 - **Improved Communication :** Fosters better communication between students and administrators regarding academic performance.
 This system provides a user-friendly and secure platform for Notre Dame University to effectively manage student results and information, ultimately contributing to a more efficient and transparent academic experience.
-# Screenshots :
-- ## Student Portal -
+# 📸 Screenshots :
+- ## 👨‍🎓 Student Portal -
 ![1loginPage](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/ee664aaa-4841-4c9f-98d1-baad228e3a24)
 - Student Result portal -
 ![2studentPortal](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/3b034253-7d18-4e58-9955-5567a3aec85c)
 - Showing Result -
 ![3studentResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/6813550e-6a77-4fe6-8639-9579324e25b6)
 
-- ## Admin Dashboard -
+- ## 🎩 Admin Dashboard -
 ![4mainDashboardPage](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/0847d631-18c5-497d-bbb1-720800a36eca)
 - Semester Creation -
 ![5newSemester](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/1c34926b-8bf4-46f6-846d-4bb424b26e1b)
@@ -97,18 +97,18 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 ![19adminPass](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/298440f4-1cea-4d92-bee6-49e1438056a6)
 
 
-NUDUB Student Management System aims to simplify academic management for both students and administrators, ensuring a smooth and efficient academic experience at Notre Dame University Bangladesh.
-## Feedback
+NUDUB Student Management System aims to simplify academic management for both students and administrators, ensuring a smooth and efficient academic experience at Notre Dame University Bangladesh. 📡
+## ✅ Feedback 💭
 
 If you have any feedback, please reach out to us at istiaqlm@gmail.com
 
 
-## Authors
+## ✔ Authors
 
 - [@Istiaq-Alam](https://www.github.com/Istiaq-Alam)
 
 
-## License
+## © License
 
 [MIT](https://choosealicense.com/licenses/mit/)
 
