@@ -9,7 +9,7 @@ NUDUB Student Management System is a comprehensive web application designed spec
 
 
 
-## ------------------------------ Key Features:-----------------------------
+## ---------------------------------- Key Features:-------------------------------
 
  ### **Student Portal :** 
 - **Result and Percentage Lookup :** Students can easily search and view their results and overall percentages for each semester. 
@@ -62,7 +62,7 @@ Start the server
 - **Improved Communication :** Fosters better communication between students and administrators regarding academic performance.
 This system provides a user-friendly and secure platform for Notre Dame University to effectively manage student results and information, ultimately contributing to a more efficient and transparent academic experience.
 # Screenshots :
-- ## Student Portal -
+- ## Student Result Portal -
 ![1loginPage](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/ee664aaa-4841-4c9f-98d1-baad228e3a24)
 - Student Result portal -
 ![2studentPortal](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/3b034253-7d18-4e58-9955-5567a3aec85c)
