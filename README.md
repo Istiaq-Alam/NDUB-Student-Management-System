@@ -11,11 +11,11 @@ NUDUB Student Management System is a comprehensive web application designed spec
 
 ## ------------------------------ Key Features:-----------------------------
 
- ### **Student Portal :** 
+ ###  **Student Portal :** 
 - **Result and Percentage Lookup :** Students can easily search and view their results and overall percentages for each semester. 
 - View a clear and concise overview of their academic performance.
 
-### **Admin Dashboard :**
+###  **Admin Dashboard :**
 - Administrators have access to a dedicated dashboard where they can manage all aspects of the system, including student information, course combinations, and result management.
 - Secure login for authorized administrators.
 - Add student information, including details relevant to each semester.
