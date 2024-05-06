@@ -9,7 +9,7 @@ NUDUB Student Management System is a comprehensive web application designed spec
 
 
 
-## ---------------------------------- Key Features ----------------------------------
+## ------------------------------ Key Features:-----------------------------
 
  ### **Student Portal :** 
 - **Result and Percentage Lookup :** Students can easily search and view their results and overall percentages for each semester. 
@@ -26,31 +26,25 @@ NUDUB Student Management System is a comprehensive web application designed spec
 - **Course Management :** The system allows administrators to manage course combinations efficiently, making it easier to assign courses to students for each semester.
 - **Individual Result Entry :** Admins can input individual results for every registered student, ensuring timely and accurate recording of academic performance.
 - **Data Management :** Admins have full control over student data, allowing them to update information as needed, ensuring data accuracy and integrity.
+
 ## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://link-to-project
-```
-
-Go to the project directory
+- Clone the project into `htdocs` folder
 
 ```bash
-  cd my-project
+  git clone https://github.com/Istiaq-Alam/NDUB-Student-Management-System.git
 ```
 
-Install dependencies
+- Go to the project directory
 
 ```bash
-  npm install
+  cd NDUB-Student-Management-System
 ```
 
-Start the server
-
-```bash
-  npm run start
-```
+- Launch Xampp and start Apache MySQL server
+- Go to PHPMyadmin and create a new database named `srms`
+- In the `srms` database import the SQL file.
+- The SQL file is locate in NDUB-Student-Management-System/db folder in project directory
+- Go to site `http://localhost/StudentManagementSystem` and Explore the Website. 🤯
 
 
 ## Advantages
@@ -62,7 +56,7 @@ Start the server
 - **Improved Communication :** Fosters better communication between students and administrators regarding academic performance.
 This system provides a user-friendly and secure platform for Notre Dame University to effectively manage student results and information, ultimately contributing to a more efficient and transparent academic experience.
 # Screenshots :
-- ## Student Result Portal -
+- ## Student Portal -
 ![1loginPage](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/ee664aaa-4841-4c9f-98d1-baad228e3a24)
 - Student Result portal -
 ![2studentPortal](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/3b034253-7d18-4e58-9955-5567a3aec85c)
