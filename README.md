@@ -71,7 +71,7 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 - Course Creation -
 ![7createCourse](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/f4552521-d5a8-4f37-91fa-90432d148262)
 - Manage Courses -
-![8manageCourses](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/f1ffde1f-fa69-4ed7-905f-40fa59c2d93c)
+![8manageCourses](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/7be67a50-4825-4b56-bcb3-9f9bdecfcd13)
 - Course Combination -
 ![9courseCombo](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/acabf184-1d5f-470e-ba98-c3cc6bc4fbc0)
 - Managing Course Combination - 
