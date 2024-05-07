@@ -1,6 +1,5 @@
 
 <?php
-
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])=="")
@@ -129,10 +128,10 @@ else if($error){?>
                                                 <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>Serial No.</th>
-                                                            <th>Student Name</th>
                                                             <th>Student ID</th>
+                                                            <th>Student Name</th>
                                                             <th>Batch</th>
+                                                            <th>Semester</th>
                                                             <th>Reg Date</th>
                                                             <th>Status</th>
                                                             <th>Update</th>
@@ -140,9 +139,9 @@ else if($error){?>
                                                     </thead>
                                                     <tfoot>
                                                         <tr>
-                                                          <th>#</th>
+                                                          <th>Student ID</th>
                                                             <th>Student Name</th>
-                                                            <th>Student ID</th>
+                                                            <th>Batch</th>
                                                             <th>Semester</th>
                                                             <th>Reg Date</th>
                                                             <th>Status</th>
@@ -160,10 +159,10 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {   ?>
 <tr>
- <td><?php echo htmlentities($cnt);?></td>
+ <td><?php echo htmlentities($result->RollId);?></td>
                                                             <td><?php echo htmlentities($result->StudentName);?></td>
-                                                            <td><?php echo htmlentities($result->RollId);?></td>
-                                                            <td><?php echo htmlentities($result->Section);?> (<?php echo htmlentities($result->ClassName);?>)</td>
+                                                            <td><?php echo htmlentities($result->Section);?></td>
+                                                            <td><?php echo htmlentities($result->ClassName);?></td>
                                                             <td><?php echo htmlentities($result->RegDate);?></td>
                                                              <td><?php if($result->Status==1){
 echo htmlentities('Active');
