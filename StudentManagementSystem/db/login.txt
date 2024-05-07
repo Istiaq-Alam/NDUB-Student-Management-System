@@ -1,0 +1,2 @@
+Admin ID - admin
+Password - admin
