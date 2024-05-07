@@ -1,6 +1,6 @@
 
 <?php
-session_start();
+//session_start();  // It was showing a error so I remove this line from all manage pages.
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])=="")
