@@ -30,11 +30,11 @@ body {
     padding: 0;
 }
 
-.mak{
-    max-width:;
+.mak {
+    max-width: ;
     max-height: 100px;
     background-color: #021b3c;
-    background:  ;
+    background: ;
     border: #ffffff solid rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(10px);
     border-radius: 5px;
@@ -42,6 +42,7 @@ body {
     text-align: left;
     animation: fadeInOut 2s;
 }
+
 .container {
     max-width: 1000px;
     margin: 60px auto;
@@ -130,7 +131,7 @@ $rollid=$_POST['rollid'];
 $classid=$_POST['class'];
 $_SESSION['rollid']=$rollid;
 $_SESSION['classid']=$classid;
-$qery = "SELECT   tblstudents.StudentName,tblstudents.RollId,tblstudents.RegDate,tblstudents.StudentId,tblstudents.Status,tblclasses.ClassName,tblclasses.Section from tblstudents join tblclasses on tblclasses.id=tblstudents.ClassId where tblstudents.RollId=:rollid and tblstudents.ClassId=:classid ";
+$qery = "SELECT  tblstudents.StudentName,tblstudents.RollId,tblstudents.RegDate,tblstudents.StudentId,tblstudents.Status,tblclasses.ClassName,tblclasses.Section from tblstudents join tblclasses on tblclasses.id=tblstudents.ClassId where tblstudents.RollId=:rollid and tblstudents.ClassId=:classid ";
 $stmt = $dbh->prepare($qery);
 $stmt->bindParam(':rollid',$rollid,PDO::PARAM_STR);
 $stmt->bindParam(':classid',$classid,PDO::PARAM_STR);
@@ -156,10 +157,22 @@ foreach($resultss as $row)
 
                                             <table class="table table-hover table-bordered">
                                                 <thead>
-                                                    <tr><th><h5>Serial No.</h5></th>
-                                                        <th><h5 align="center">Course Code</h5></th>
-                                                        <th><h5 align="center">Course</h5></th>
-                                                        <th><h5 align="center">Marks</h5></th>
+                                                    <tr>
+                                                        <th>
+                                                            <h5 align="center">Course Code</h5>
+                                                        </th>
+                                                        <th>
+                                                            <h5 align="center">Course</h5>
+                                                        </th>
+                                                        <th>
+                                                            <h5 align="center">Marks</h5>
+                                                        </th>
+                                                        <th>
+                                                            <h5 align="center">Grade point</h5>
+                                                        </th>
+                                                        <th>
+                                                            <h5 align="center">GPA</h5>
+                                                        </th>
                                                     </tr>
                                                 </thead>
 
@@ -170,13 +183,14 @@ foreach($resultss as $row)
                                                     <?php                                              
 // Code for result
 
- $query ="select t.StudentName,t.RollId,t.ClassId,t.marks,SubjectId,tblsubjects.SubjectName, tblsubjects.SubjectCode from (select sts.StudentName,sts.RollId,sts.ClassId,tr.marks,SubjectId from tblstudents as sts join  tblresult as tr on tr.StudentId=sts.StudentId) as t join tblsubjects on tblsubjects.id=t.SubjectId where (t.RollId=:rollid and t.ClassId=:classid)";
+$query ="select t.StudentName,t.RollId,t.ClassId,t.marks,SubjectId,tblsubjects.SubjectName, tblsubjects.SubjectCode from (select sts.StudentName,sts.RollId,sts.ClassId,tr.marks,SubjectId from tblstudents as sts join  tblresult as tr on tr.StudentId=sts.StudentId) as t join tblsubjects on tblsubjects.id=t.SubjectId where (t.RollId=:rollid and t.ClassId=:classid)";
 $query= $dbh -> prepare($query);
 $query->bindParam(':rollid',$rollid,PDO::PARAM_STR);
 $query->bindParam(':classid',$classid,PDO::PARAM_STR);
 $query-> execute();  
 $results = $query -> fetchAll(PDO::FETCH_OBJ);
-$cnt=1;
+$cnt=1; //row counter 
+$fail=0;
 if($countrow=$query->rowCount()>0)
 { 
 
@@ -185,29 +199,153 @@ foreach($results as $result){
     ?>
 
                                                     <tr>
-                                                        <th scope="row"><?php echo htmlentities($cnt);?></th>
-                                                        <td align="center"><?php echo htmlentities($result->SubjectCode);?></td>
+
+                                                        <td align="center">
+                                                            <?php echo htmlentities($result->SubjectCode);?></td>
                                                         <td><?php echo htmlentities($result->SubjectName);?></td>
-                                                        <td align="center"><?php echo htmlentities($totalmarks=$result->marks);?>
-                                                        </td>
+                                                        <td align="center">
+                                                            <?php echo htmlentities($totalmarks=$result->marks);?></td>
+                                                        <td align="center">
+                                                            <?php 
+                                                        if($result->marks>=80)
+                                                        echo htmlentities("A+");
+                                                        
+                                                        else if($result->marks >= 70 && $result->marks < 80)
+                                                        echo htmlentities("A");
+                                                    
+                                                        else if($result->marks >= 60 && $result->marks < 70)
+                                                        echo htmlentities("A-");
+
+                                                        else if($result->marks >= 55 && $result->marks < 60)
+                                                        echo htmlentities("B+");
+                                                        
+                                                        else if($result->marks >= 50 && $result->marks < 55)
+                                                        echo htmlentities("B");
+
+                                                        else if($result->marks >= 45 && $result->marks < 50)
+                                                        echo htmlentities("B-");
+
+                                                        else if($result->marks >= 40 && $result->marks < 45)
+                                                        echo htmlentities("C");
+
+                                                        else if($result->marks < 40){
+                                                        echo htmlentities("F");
+                                                        $fail=1;
+                                                    }
+
+                                                        ?></td>
+
+                                                        <td align="center">
+                                                            <?php 
+                                                            
+                                                            if($result->marks>=80)
+                                                        echo htmlentities("4.00");
+                                                        
+                                                        else if($result->marks >= 70 && $result->marks < 80)
+                                                        echo htmlentities("3.75");
+                                                    
+                                                        else if($result->marks >= 60 && $result->marks < 70)
+                                                        echo htmlentities("3.50");
+
+                                                        else if($result->marks >= 55 && $result->marks < 60)
+                                                        echo htmlentities("3.25");
+                                                        
+                                                        else if($result->marks >= 50 && $result->marks < 55)
+                                                        echo htmlentities("3.00");
+
+                                                        else if($result->marks >= 45 && $result->marks < 50)
+                                                        echo htmlentities("2.75");
+
+                                                        else if($result->marks >= 40 && $result->marks < 45)
+                                                        echo htmlentities("2.25");
+
+                                                        else if($result->marks < 40){
+                                                        echo htmlentities("0.00");
+                                                    }
+
+                                                        ?></td>
                                                     </tr>
                                                     <?php 
+
 $totlcount+=$totalmarks;
 $cnt++;}
+
+
 ?>
                                                     <tr>
-                                                        <th scope="row" colspan="3">Total Marks</th>
-                                                        <td align="center"><b><?php echo htmlentities($totlcount); ?></b> out of
+                                                        <th scope="row" colspan="2">Total Marks</th>
+                                                        <td align="center">
+                                                            <b><?php echo htmlentities($totlcount); ?></b> out of
                                                             <b><?php echo htmlentities($outof=($cnt-1)*100); ?></b>
+                                                        </td>
+                                                        <th scope="row" colspan="1">Total Grade</th>
+                                                        <td align="center"> <b> <?php
+                                                           $grade = $totlcount / ($cnt-1);
+
+                                                           if($grade>=80)
+                                                           echo htmlentities("A+");
+                                                           
+                                                           else if($grade >= 70 && $grade < 80)
+                                                           echo htmlentities("A");
+                                                       
+                                                           else if($grade >= 60 && $grade < 70)
+                                                           echo htmlentities("A-");
+   
+                                                           else if($grade >= 55 && $grade < 60)
+                                                           echo htmlentities("B+");
+                                                           
+                                                           else if($grade >= 50 && $grade < 55)
+                                                           echo htmlentities("B");
+   
+                                                           else if($grade >= 45 && $grade < 50)
+                                                           echo htmlentities("B-");
+   
+                                                           else if($grade >= 40 && $grade < 45)
+                                                           echo htmlentities("C");
+   
+                                                           else if($grade < 40)
+                                                           echo htmlentities("F");
+
+                                                         ?> </b> </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th scope="row" colspan="2">Percntage</th>
+                                                        <td align="center">
+                                                            <b><?php echo  htmlentities($totlcount*(100)/$outof); ?>
+                                                                %</b>
+                                                        </td>
+                                                        <th scope="row" colspan="1">Total CGPA</th>
+                                                        <td align="center"> <b> <?php 
+                                                        
+                                                        if($grade>=80)
+                                                        echo htmlentities("4.00");
+                                                        
+                                                        else if($grade >= 70 && $grade < 80)
+                                                        echo htmlentities("3.75");
+                                                    
+                                                        else if($grade >= 60 && $grade < 70)
+                                                        echo htmlentities("3.50");
+
+                                                        else if($grade >= 55 && $grade < 60)
+                                                        echo htmlentities("3.25");
+                                                        
+                                                        else if($grade >= 50 && $grade < 55)
+                                                        echo htmlentities("3.00");
+
+                                                        else if($grade >= 45 && $grade < 50)
+                                                        echo htmlentities("2.75");
+
+                                                        else if($grade >= 40 && $grade < 45)
+                                                        echo htmlentities("2.25");
+
+                                                        else if($grade < 40)
+                                                        echo htmlentities("0.00");
+                                                        
+                                                        ?> </b>
                                                         </td>
                                                     </tr>
                                                     <tr>
-                                                        <th scope="row" colspan="3">Percntage</th>
-                                                        <td align="center"><b><?php echo  htmlentities($totlcount*(100)/$outof); ?>
-                                                                %</b></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th scope="row" colspan="3">Print Result</th>
+                                                        <th scope="row" colspan="4">Print Result</th>
                                                         <td><b><button id="printBtn">Print as PDF</button></b></td>
                                                         <script>
                                                         document.getElementById("printBtn").addEventListener("click",
@@ -220,12 +358,9 @@ $cnt++;}
                                                     <?php } else { ?>
                                                     <div class="alert alert-warning left-icon-alert" role="alert">
                                                         <strong>Notice!</strong> Your result not declare yet
-                                                        <?php }
-?>
+                                                        <?php }?>
                                                     </div>
-                                                    <?php 
- } else
- {?>
+                                                    <?php } else {?>
 
                                                     <div class="alert alert-danger left-icon-alert" role="alert">
                                                         strong>Oh snap!</strong>
@@ -263,19 +398,19 @@ echo htmlentities("Invalid Student ID Or Semester");
     <!-- /.main-wrapper -->
 
 
-    
+
 
     <div class="foot">
-            
-            <footer>
+
+        <footer>
             <div class="mak">
-        <marquee direction="left" scrollamount="20">
-            <h2 style="font-size: 25px; color: #ffffff"> Developed By Istiaq Alam</h2>
-        </marquee>
-        <div style="background-color:#afa014;height:4px; width:1920px; margin: 0px 0px 0px 0px"></div>
+                <marquee direction="left" scrollamount="20">
+                    <h2 style="font-size: 25px; color: #ffffff"> Developed By Istiaq Alam</h2>
+                </marquee>
+                <div style="background-color:#afa014;height:4px; width:1920px; margin: 0px 0px 0px 0px"></div>
+            </div>
+        </footer>
     </div>
-            </footer>
-        </div>
 
 
     <!-- ========== COMMON JS FILES ========== -->
