@@ -11,7 +11,7 @@ if(strlen($_SESSION['alogin'])=="")
 
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> 
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,7 +36,7 @@ if(strlen($_SESSION['alogin'])=="")
         padding: 0;
     }
     .container {
-        max-width: 1000px;
+        max-width: 1100px;
         margin: 50px auto;
         padding: 20px;
         background-color: #ffffff ;
@@ -129,9 +129,10 @@ else if($error){?>
                                                 <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>#</th>
+                                                            <th></th>
                                                             <th>Course Name</th>
                                                             <th>Course Code</th>
+                                                            <th>Credit Hours</th>
                                                             <th>Creation Date</th>
                                                             <th>Updation Date</th>
                                                             <th>Edit</th>
@@ -142,6 +143,7 @@ else if($error){?>
                                                           <th>#</th>
                                                              <th>Course Name</th>
                                                             <th>Course Code</th>
+                                                            <th>Credit Hours</th>
                                                             <th>Creation Date</th>
                                                             <th>Updation Date</th>
                                                             <th>Edit</th>
@@ -161,6 +163,7 @@ foreach($results as $result)
  <td><?php echo htmlentities($cnt);?></td>
                                                             <td><?php echo htmlentities($result->SubjectName);?></td>
                                                             <td><?php echo htmlentities($result->SubjectCode);?></td>
+                                                            <td><?php echo htmlentities($result->Credit);?></td>
                                                             <td><?php echo htmlentities($result->Creationdate);?></td>
                                                             <td><?php echo htmlentities($result->UpdationDate);?></td>
 <td>
