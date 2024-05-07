@@ -60,7 +60,7 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 - Student Result portal -
 ![2studentPortal](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/3b034253-7d18-4e58-9955-5567a3aec85c)
 - Showing Result -
-![3studentResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/6813550e-6a77-4fe6-8639-9579324e25b6)
+![3studentResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/a26f3ad5-ded9-454f-97f9-ac0251178c3d)
 
 - ## 🎩 Admin Dashboard -
 ![4mainDashboardPage](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/0847d631-18c5-497d-bbb1-720800a36eca)
