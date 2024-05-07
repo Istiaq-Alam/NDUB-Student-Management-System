@@ -79,7 +79,7 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 - Student Admission - 
 ![11addStudent](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/19b46354-397f-41c0-9222-46f98837d6b6)
 - Manage Students Info -
-![12manageStudent](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/de1461b0-5d46-448a-8d68-edfed2d795c0)
+![12manageStudent](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/848fae5c-ff38-4e4c-b0be-0fa30f8c4d78)
 - Result Creation -
 ![13addResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/d03fcfa3-1099-4ba1-956a-c2aea274fd93)
 - Manage Result -
