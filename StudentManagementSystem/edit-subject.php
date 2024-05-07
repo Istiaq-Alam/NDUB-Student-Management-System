@@ -12,10 +12,12 @@ if(isset($_POST['Update']))
 $sid=intval($_GET['subjectid']);
 $subjectname=$_POST['subjectname'];
 $subjectcode=$_POST['subjectcode']; 
-$sql="update  tblsubjects set SubjectName=:subjectname,SubjectCode=:subjectcode where id=:sid";
+$credit=$_POST['credit']; 
+$sql="update  tblsubjects set SubjectName=:subjectname,SubjectCode=:subjectcode, Credit=:credit where id=:sid";
 $query = $dbh->prepare($sql);
 $query->bindParam(':subjectname',$subjectname,PDO::PARAM_STR);
 $query->bindParam(':subjectcode',$subjectcode,PDO::PARAM_STR);
+$query->bindParam(':credit',$credit,PDO::PARAM_STR);
 $query->bindParam(':sid',$sid,PDO::PARAM_STR);
 $query->execute();
 $msg="Subject Info updated successfully";
@@ -159,6 +161,12 @@ foreach($results as $result)
                                                         <label for="default" class="col-sm-2 control-label">Course Code</label>
                                                         <div class="col-sm-10">
  <input type="text" name="subjectcode" class="form-control" value="<?php echo htmlentities($result->SubjectCode);?>"  id="default" placeholder="Course Code" required="required">
+                                                        </div>
+                                                    </div>
+<div class="form-group">
+                                                        <label for="default" class="col-sm-2 control-label">Credit Hours</label>
+                                                        <div class="col-sm-10">
+ <input type="number" name="credit" step="0.50" class="form-control" value="<?php echo htmlentities($result->Credit);?>"  id="default" placeholder="Credit Hours" required="required">
                                                         </div>
                                                     </div>
                                                     <?php }} ?>
