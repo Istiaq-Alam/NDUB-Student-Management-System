@@ -28,7 +28,7 @@ if(strlen($_SESSION['alogin'])=="")
           <style>
             body {
         font-family: Arial, sans-serif;
-        background: url(./back4.jpg) no-repeat;
+        background: url(./back1.jpg) no-repeat;
         //background-position: center;
         background-size: cover;
         background-color: #6055c7;
@@ -133,10 +133,10 @@ else if($error){?>
                                                 <table id="example" class="display table table-striped table-bordered" cellspacing="0" width="100%">
                                                     <thead>
                                                         <tr>
-                                                            <th>#</th>
-                                                            <th>Student Name</th>
                                                             <th>Student ID</th>
+                                                            <th>Student Name</th>
                                                             <th>Batch</th>
+                                                            <th>Semester</th>
                                                             <th>Reg Date</th>
                                                             <th>Status</th>
                                                             <th>Edit</th>
@@ -146,8 +146,8 @@ else if($error){?>
                                                         <tr>
                                                           <th>#</th>
                                                             <th>Student Name</th>
-                                                            <th>Student ID</th>
                                                             <th>Batch</th>
+                                                            <th>Semester</th>
                                                             <th>Reg Date</th>
                                                             <th>Status</th>
                                                             <th>Edit</th>
@@ -164,10 +164,10 @@ if($query->rowCount() > 0)
 foreach($results as $result)
 {   ?>
 <tr>
- <td><?php echo htmlentities($cnt);?></td>
+ <td><?php echo htmlentities($result->RollId);?></td>
                                                             <td><?php echo htmlentities($result->StudentName);?></td>
-                                                            <td><?php echo htmlentities($result->RollId);?></td>
-                                                            <td><?php echo htmlentities($result->Section);?>(<?php echo htmlentities($result->ClassName);?>)</td>
+                                                            <td><?php echo htmlentities($result->Section);?></td>
+                                                            <td><?php echo htmlentities($result->ClassName);?></td>
                                                             <td><?php echo htmlentities($result->RegDate);?></td>
                                                              <td><?php if($result->Status==1){
 echo htmlentities('Active');
