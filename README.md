@@ -102,7 +102,7 @@ NDUB Student Management System aims to simplify academic management for both stu
 If you have any feedback, please reach out to us at istiaqlm@gmail.com
 
 
-## ✔ Authors
+## ✔ Author
 - [@Istiaq-Alam](https://www.github.com/Istiaq-Alam) 
 ## ♻ Contributions
 - [@Imtiaj-Uddin](https://www.github.com/ImtiajUddin) 
