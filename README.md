@@ -103,10 +103,10 @@ If you have any feedback, please reach out to us at istiaqlm@gmail.com
 
 
 ## ✔ Authors
-
-- [@Istiaq-Alam](https://www.github.com/Istiaq-Alam)
-
-
+- [@Istiaq-Alam](https://www.github.com/Istiaq-Alam) 
+## ♻ Contributions
+- [@Imtiaj-Uddin](https://www.github.com/ImtiajUddin) 
+- [@Evangelist-Richard](https://www.github.com/Evangelist-Richard)
 ## © License
 
 [MIT](https://choosealicense.com/licenses/mit/)
