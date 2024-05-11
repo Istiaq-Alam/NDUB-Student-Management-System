@@ -11,9 +11,11 @@ if(isset($_POST['submit']))
 {
 	
     $marks=array();
+  
 $class=$_POST['class'];
 $studentid=$_POST['studentid']; 
 $mark=$_POST['marks'];
+
 
  $stmt = $dbh->prepare("SELECT tblsubjects.SubjectName,tblsubjects.id FROM tblsubjectcombination join  tblsubjects on  tblsubjects.id=tblsubjectcombination.SubjectId WHERE tblsubjectcombination.ClassId=:cid order by tblsubjects.SubjectName");
  $stmt->execute(array(':cid' => $class));
@@ -33,6 +35,7 @@ $query->bindParam(':studentid',$studentid,PDO::PARAM_STR);
 $query->bindParam(':class',$class,PDO::PARAM_STR);
 $query->bindParam(':sid',$sid,PDO::PARAM_STR);
 $query->bindParam(':marks',$mar,PDO::PARAM_STR);
+
 $query->execute();
 $lastInsertId = $dbh->lastInsertId();
 if($lastInsertId)
@@ -212,7 +215,7 @@ else if($error){?>
                                                     <select name="class" class="form-control clid" id="classid"
                                                         onChange="getStudent(this.value);" required="required">
                                                         <option value="">Select Semester & Batch</option>
-                                                        <?php $sql = "SELECT * from tblclasses";
+<?php $sql = "SELECT * from tblclasses";
 $query = $dbh->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -229,7 +232,7 @@ foreach($results as $result)
                                                 </div>
                                             </div>
                                             <div class="form-group">
-                                                <label for="date" class="col-sm-2 control-label ">Student</label>
+                                                <label for="date" class="col-sm-2 control-label">Student</label>
                                                 <div class="col-sm-10">
                                                     <select name="studentid" class="form-control stid" id="studentid"
                                                         required="required" onChange="getresult(this.value);">
@@ -240,7 +243,7 @@ foreach($results as $result)
                                             <div class="form-group">
 
                                                 <div class="col-sm-10">
-                                                    <div id="reslt">
+                                                    <div id="result">
                                                     </div>
                                                 </div>
                                             </div>
