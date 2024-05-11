@@ -1,6 +1,6 @@
 
 <?php
-//session_start();  // It was showing a error so I remove this line from all manage pages.
+
 error_reporting(0);
 include('includes/config.php');
 if(strlen($_SESSION['alogin'])=="")
@@ -33,6 +33,21 @@ if(strlen($_SESSION['alogin'])=="")
         background-color: #6055c7;
         margin: 0;
         padding: 0;
+    }
+    .hd{
+        letter-spacing: 1px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+        typing 6s,
+        cursor 6s step-end infinite alternate;
+    }
+    @keyframes cursor {
+        50% {border-color: transparent}
+    }
+    @keyframes typing {
+        from {width: 0}
     }
     .container {
         max-width: 1200px;
@@ -114,7 +129,7 @@ if(strlen($_SESSION['alogin'])=="")
                                         <div class="container">
                                             <div class="panel-heading">
                                                 <div align="center" class="panel-title">
-                                                    <h2>View Semesters Info</h2>
+                                                    <h2 style="color: #021b3c;" class="hd">View Semesters Info</h2>
                                                 </div>
                                             </div>
 <?php if($msg){?>
