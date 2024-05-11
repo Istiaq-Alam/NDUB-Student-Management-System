@@ -188,32 +188,37 @@ else if($error){?>
                                             </div>
 
 
-
                                             <div class="form-group">
-                                                <label for="default" class="col-sm-2 control-label">Gender</label>
+                                                <label for="default" class="col-sm-2 control-label">Batch</label>
                                                 <div class="col-sm-10">
-                                                    <input type="radio" name="gender" value="Male" required="required"
-                                                        checked="">Male <input type="radio" name="gender" value="Female"
-                                                        required="required">Female
+                                                    <select name="class" class="form-control" id="default"
+                                                        required="required">
+                                                        <option value="">Select Batch</option>
+<?php $sql = "SELECT * from tblclasses";
+$query = $dbh->prepare($sql);
+$query->execute();
+$results=$query->fetchAll(PDO::FETCH_OBJ);
+if($query->rowCount() > 0)
+{
+foreach($results as $result)
+{   ?>
+                                                        <option value="<?php echo htmlentities($result->id); ?>">
+                                                            <?php echo htmlentities($result->Section); ?>
+                                                        </option>
+                                                        <?php }} ?>
+                                                    </select>
                                                 </div>
                                             </div>
-
-
-
-
-
-
-
 
 
 
                                             <div class="form-group">
                                                 <label for="default" class="col-sm-2 control-label">Semester</label>
                                                 <div class="col-sm-10">
-                                                    <select name="class" class="form-control" id="default"
-                                                        required="required">
+                                                    <select name="class" class="form-control" id="class"
+                                                        required="required" onChange="getresult(this.value);">
                                                         <option value="">Select Semester</option>
-                                                        <?php $sql = "SELECT * from tblclasses";
+<?php $sql = "SELECT * from tblclasses";
 $query = $dbh->prepare($sql);
 $query->execute();
 $results=$query->fetchAll(PDO::FETCH_OBJ);
@@ -229,6 +234,17 @@ foreach($results as $result)
                                                     </select>
                                                 </div>
                                             </div>
+
+
+                                            <div class="form-group">
+                                                <label for="default" class="col-sm-2 control-label">Gender</label>
+                                                <div class="col-sm-10">
+                                                    <input type="radio" name="gender" value="Male" required="required"
+                                                        checked="">Male <input type="radio" name="gender" value="Female"
+                                                        required="required">Female
+                                                </div>
+                                            </div>
+
                                             <div class="form-group">
                                                 <label for="date" class="col-sm-2 control-label">DOB</label>
                                                 <div class="col-sm-10">
