@@ -34,6 +34,21 @@ if(strlen($_SESSION['alogin'])=="")
         margin: 0;
         padding: 0;
     }
+    .hd{
+        letter-spacing: 1px;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+        typing 6s,
+        cursor 6s step-end infinite alternate;
+    }
+    @keyframes cursor {
+        50% {border-color: transparent}
+    }
+    @keyframes typing {
+        from {width: 0}
+    }
     .container {
         max-width: 1200px;
         margin: 50px auto;
@@ -110,8 +125,8 @@ if(strlen($_SESSION['alogin'])=="")
 
                                         <div class="container">
                                             <div class="panel-heading">
-                                                <div align="center  " class="panel-title">
-                                                    <h2>View Students Info</h2>
+                                                <div align="center" class="panel-title">
+                                                    <h2 style="color: #021b3c;" class="hd">View Students Info</h2>
                                                 </div>
                                             </div>
 <?php if($msg){?>
