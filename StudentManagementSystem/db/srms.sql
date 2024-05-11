@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost:3306
--- Generation Time: May 08, 2024 at 03:33 PM
+-- Generation Time: May 11, 2024 at 02:25 PM
 -- Server version: 10.5.20-MariaDB
 -- PHP Version: 7.3.33
 
@@ -145,7 +145,18 @@ INSERT INTO `tblstudents` (`StudentId`, `StudentName`, `RollId`, `StudentEmail`,
 (23, 'Evangelist Richard Gomes', '1010', 'evangelist05101010@student.ndub.edu.bd', 'Male', '2002-10-19', 1, '2024-05-06 16:19:19', NULL, 1),
 (24, 'Prima Saha', '1014', 'prima05101014@student.ndub.edu.bd', 'Female', '2002-09-17', 1, '2024-05-06 16:25:58', NULL, 1),
 (25, 'Md. Rasin Hasan Shad', '1015', 'shad05101015@student.ndub.edu.bd', 'Male', '2002-08-10', 1, '2024-05-06 16:28:04', NULL, 1),
-(26, 'Jan Jason Ralf', '1016', 'ralf05101016@student.ndub.edu.bd', 'Male', '2002-08-19', 1, '2024-05-06 16:29:03', NULL, 1);
+(26, 'Jan Jason Ralf', '1016', 'ralf05101016@student.ndub.edu.bd', 'Male', '2002-08-19', 1, '2024-05-06 16:29:03', NULL, 1),
+(27, 'Bijoy Sarker', '1017', 'bijoy05101017@student.ndub.edu.bd', 'Male', '2002-07-12', 1, '2024-05-10 18:02:40', NULL, 1),
+(28, 'Raisha Anjum', '1019', 'raisha05101019@student.ndub.edu.bd', 'Female', '2002-09-07', 1, '2024-05-10 18:04:55', NULL, 1),
+(29, 'Ruhi Tahmidul Al Rashedi', '1020', 'ruhi05101020@student.ndub.edu.bd', 'Male', '2002-02-14', 1, '2024-05-10 18:28:27', NULL, 1),
+(30, 'Hasnin Jahan Hannah', '1021', 'hanna05101021@student.ndub.edu.bd', 'Female', '2002-08-07', 1, '2024-05-11 05:01:27', NULL, 1),
+(31, 'Shorov Paul', '1022', 'shorov05101022@student.ndub.edu.bd', 'Male', '2002-09-14', 1, '2024-05-11 05:02:48', NULL, 1),
+(32, 'Alif Khan Lisan', '1024', 'alif05101024@student.ndub.edu.bd', 'Male', '2002-05-10', 1, '2024-05-11 05:03:37', '2024-05-11 05:25:32', 1),
+(33, 'Nadia Afroj Orin', '1023', 'orin05101023@student.ndub.edu.bd', 'Female', '2002-06-05', 1, '2024-05-11 05:26:29', NULL, 1),
+(34, 'Fahim Rahman', '1025', 'fahim05101025@student.ndub.edu.bd', 'Male', '2002-04-12', 1, '2024-05-11 05:28:20', NULL, 1),
+(35, 'Priton Anthony Cruze', '1026', 'pritom05101026@student.ndub.edu.bd', 'Male', '2002-09-09', 1, '2024-05-11 06:34:54', NULL, 1),
+(36, 'Joynal Abedin', '1030', 'joynal05101030@student.ndub.edu.bd', 'Male', '2002-07-07', 1, '2024-05-11 06:35:40', NULL, 1),
+(37, 'SK Azizul Hasan Shanon', 'R1017', 'azizul05101017@student.ndub.edu.bd', 'Male', '2001-09-09', 1, '2024-05-11 06:37:37', '2024-05-11 09:53:56', 1);
 
 -- --------------------------------------------------------
 
@@ -283,7 +294,7 @@ ALTER TABLE `tblresult`
 -- AUTO_INCREMENT for table `tblstudents`
 --
 ALTER TABLE `tblstudents`
-  MODIFY `StudentId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `StudentId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
 -- AUTO_INCREMENT for table `tblsubjectcombination`
