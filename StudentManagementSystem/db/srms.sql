@@ -2,10 +2,10 @@
 -- version 5.2.1
 -- https://www.phpmyadmin.net/
 --
--- Host: localhost:3306
--- Generation Time: May 11, 2024 at 02:25 PM
--- Server version: 10.5.20-MariaDB
--- PHP Version: 7.3.33
+-- Host: 127.0.0.1
+-- Generation Time: May 12, 2024 at 06:33 PM
+-- Server version: 10.4.28-MariaDB
+-- PHP Version: 8.2.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -18,7 +18,7 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8mb4 */;
 
 --
--- Database: `id22123399_srms`
+-- Database: `srms`
 --
 
 -- --------------------------------------------------------
@@ -87,7 +87,7 @@ CREATE TABLE `tblresult` (
 INSERT INTO `tblresult` (`id`, `StudentId`, `ClassId`, `SubjectId`, `marks`, `PostingDate`, `UpdationDate`) VALUES
 (1, 1, 1, 3, 88, '2024-05-03 04:33:08', NULL),
 (2, 1, 1, 4, 80, '2024-05-03 04:33:08', NULL),
-(3, 1, 1, 5, 84, '2024-05-03 04:33:08', NULL),
+(3, 1, 1, 5, 90, '2024-05-03 04:33:08', '2024-05-12 16:14:11'),
 (4, 1, 1, 1, 87, '2024-05-03 04:33:08', NULL),
 (5, 1, 1, 2, 90, '2024-05-03 04:33:08', NULL),
 (6, 1, 1, 7, 83, '2024-05-03 04:33:08', NULL),
@@ -156,7 +156,7 @@ INSERT INTO `tblstudents` (`StudentId`, `StudentName`, `RollId`, `StudentEmail`,
 (34, 'Fahim Rahman', '1025', 'fahim05101025@student.ndub.edu.bd', 'Male', '2002-04-12', 1, '2024-05-11 05:28:20', NULL, 1),
 (35, 'Priton Anthony Cruze', '1026', 'pritom05101026@student.ndub.edu.bd', 'Male', '2002-09-09', 1, '2024-05-11 06:34:54', NULL, 1),
 (36, 'Joynal Abedin', '1030', 'joynal05101030@student.ndub.edu.bd', 'Male', '2002-07-07', 1, '2024-05-11 06:35:40', NULL, 1),
-(37, 'SK Azizul Hasan Shanon', 'R1017', 'azizul05101017@student.ndub.edu.bd', 'Male', '2001-09-09', 1, '2024-05-11 06:37:37', '2024-05-11 09:53:56', 1);
+(37, 'SK Azizul Hasan Shanon', 'R1017', 'azizul05101017@student.ndub.edu.bd', 'Male', '2001-09-09', 1, '2024-05-11 06:37:37', '2024-05-12 16:08:54', 1);
 
 -- --------------------------------------------------------
 
