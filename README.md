@@ -83,7 +83,7 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 - Result Creation -
 ![13addResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/d03fcfa3-1099-4ba1-956a-c2aea274fd93)
 - Manage Result -
-![14manageResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/9f51db9e-279f-4d41-bc6c-e3c6bc45f390)
+![14manageResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/05f68538-b516-485c-9de2-cd75f6dfffa7)
 - Semester Editing -
 ![15editSemester](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/425c0b3f-9513-4ee7-8039-e8aa9cda5a90)
 - Course Editing -
