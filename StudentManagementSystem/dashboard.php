@@ -37,36 +37,46 @@ if(strlen($_SESSION['alogin'])=="")
         margin: 0;
         padding: 0;
     }
-
     .container {
-        max-width: 5000px;
-        margin: 100px auto;
+        max-width: 1500px;
+        margin: 10px auto;
         padding: 20px;
-        background-color: #ffffff;
-        background: transparent;
+        background-color: transparent ;
         border: #91e0ff solid rgba(255, 255, 255, 0.2);
         backdrop-filter: blur(10px);
-        border-radius: 10px;
+        border-radius: 100px;
         box-shadow: 0 10px 10px rgba(0, 0, 0, 1);
-        text-align: left;
-        animation: fadeInOut 2s;
+        text-align: center;
+        border-bottom: 10px solid #ba993a ;
     }
-
-    h1 {
-        margin-top: 0;
-        color: #ffffff;
+    .hd{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        display: flex;
+        color: #25abe2;
+        justify-content: center;
+        align-items: center;
+        min-height: 10px;
+        background: transparent;
+        font-family: Times_new_roman;
+        border-bottom: 10px solid #25abe2 ;
+        position: relative;
+        font-size: 3.6em;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+        width: 100%;
+        white-space: nowrap;
+        overflow: hidden;
+        animation: 
+        typing 6s,
+        cursor 6s step-end infinite alternate;
     }
-
-    @keyframes fadeInOut {
-        0% {
-            opacity: 0;
-            transform: scale(0.9);
-        }
-
-        100% {
-            opacity: 1;
-            transform: scale(1);
-        }
+    @keyframes cursor {
+        100% {border-color: transparent}
+    }
+    @keyframes typing {
+        from {width: 0}
     }
     </style>
 </head>
@@ -97,6 +107,7 @@ if(strlen($_SESSION['alogin'])=="")
 
                         </div>
                         <!-- /.container-fluid -->
+                       <!-- <div class="container"><h1 class="hd">Notre Dame University, Bangladesh</h1> </div> -->
 
                         <section class="section">
                             <div class="container-fluid">
@@ -183,9 +194,11 @@ $totalresults=$query3->rowCount();
                         <!-- /.section -->
 
                     </div>
+                    
                     <rssapp-carousel id="6vqEeswtmez1iGJk"></rssapp-carousel>
                     <script src="https://widget.rss.app/v1/carousel.js" type="text/javascript" async></script>
-                    <rssapp-ticker id="6vqEeswtmez1iGJk"></rssapp-ticker><script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
+                    <rssapp-ticker id="6vqEeswtmez1iGJk"></rssapp-ticker>
+                    <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
 
                     <!-- /.main-page -->
 
@@ -261,7 +274,7 @@ $totalresults=$query3->rowCount();
             toastr["success"]("Login as Admin Successfully !");
         });
         </script>
-        
+
 </body>
 
 
