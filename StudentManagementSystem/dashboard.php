@@ -210,13 +210,6 @@ $totalresults=$query3->rowCount();
 
         </div>
         <!-- /.main-wrapper -->
-        <div class="foot">
-            <rssapp-ticker id="6vqEeswtmez1iGJk"></rssapp-ticker>
-            <script src="https://widget.rss.app/v1/ticker.js" type="text/javascript" async></script>
-            <footer>
-
-            </footer>
-        </div>
         <!-- ========== COMMON JS FILES ========== -->
 
         <script src="js/jquery/jquery-2.2.4.min.js"></script>
