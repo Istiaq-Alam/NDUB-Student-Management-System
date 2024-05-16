@@ -57,14 +57,6 @@ body {
     animation: fadeInOut 2s;
 }
 
-
-#welcome-text {
-    font-size: 24px;
-    margin-bottom: 20px;
-    color: #ffffff;
-    animation: fadeInOut 5s infinite alternate;
-}
-
 @keyframes fadeInOut {
     0% {
         opacity: 0;
@@ -210,23 +202,29 @@ foreach($results as $result){
                                                         if($result->marks>=80)
                                                         echo htmlentities("A+");
                                                         
-                                                        else if($result->marks >= 70 && $result->marks < 80)
+                                                        else if($result->marks >= 75 && $result->marks < 80)
                                                         echo htmlentities("A");
                                                     
-                                                        else if($result->marks >= 60 && $result->marks < 70)
+                                                        else if($result->marks >= 70 && $result->marks < 75)
                                                         echo htmlentities("A-");
 
-                                                        else if($result->marks >= 55 && $result->marks < 60)
+                                                        else if($result->marks >= 65 && $result->marks < 70)
                                                         echo htmlentities("B+");
                                                         
-                                                        else if($result->marks >= 50 && $result->marks < 55)
+                                                        else if($result->marks >= 60 && $result->marks < 65)
                                                         echo htmlentities("B");
 
-                                                        else if($result->marks >= 45 && $result->marks < 50)
+                                                        else if($result->marks >= 55 && $result->marks < 60)
                                                         echo htmlentities("B-");
 
-                                                        else if($result->marks >= 40 && $result->marks < 45)
+                                                        else if($result->marks >= 50 && $result->marks < 55)
+                                                        echo htmlentities("C+");
+
+                                                        else if($result->marks >= 45 && $result->marks < 50)
                                                         echo htmlentities("C");
+
+                                                        else if($result->marks >= 40 && $result->marks < 45)
+                                                        echo htmlentities("D");
 
                                                         else if($result->marks < 40){
                                                         echo htmlentities("F");
@@ -241,23 +239,29 @@ foreach($results as $result){
                                                             if($result->marks>=80)
                                                         echo htmlentities("4.00");
                                                         
-                                                        else if($result->marks >= 70 && $result->marks < 80)
+                                                        else if($result->marks >= 75 && $result->marks < 80)
                                                         echo htmlentities("3.75");
                                                     
-                                                        else if($result->marks >= 60 && $result->marks < 70)
+                                                        else if($result->marks >= 70 && $result->marks < 75)
                                                         echo htmlentities("3.50");
 
-                                                        else if($result->marks >= 55 && $result->marks < 60)
+                                                        else if($result->marks >= 65 && $result->marks < 70)
                                                         echo htmlentities("3.25");
                                                         
-                                                        else if($result->marks >= 50 && $result->marks < 55)
+                                                        else if($result->marks >= 60 && $result->marks < 65)
                                                         echo htmlentities("3.00");
 
-                                                        else if($result->marks >= 45 && $result->marks < 50)
+                                                        else if($result->marks >= 55 && $result->marks < 60)
                                                         echo htmlentities("2.75");
 
-                                                        else if($result->marks >= 40 && $result->marks < 45)
+                                                        else if($result->marks >= 50 && $result->marks < 55)
+                                                        echo htmlentities("2.50");
+
+                                                        else if($result->marks >= 45 && $result->marks < 50)
                                                         echo htmlentities("2.25");
+
+                                                        else if($result->marks >= 40 && $result->marks < 45)
+                                                        echo htmlentities("2.00");
 
                                                         else if($result->marks < 40){
                                                         echo htmlentities("0.00");
@@ -285,23 +289,29 @@ $cnt++;}
                                                            if($grade>=80)
                                                            echo htmlentities("A+");
                                                            
-                                                           else if($grade >= 70 && $grade < 80)
+                                                           else if($grade >= 75 && $grade < 80)
                                                            echo htmlentities("A");
                                                        
-                                                           else if($grade >= 60 && $grade < 70)
+                                                           else if($grade >= 70 && $grade < 75)
                                                            echo htmlentities("A-");
    
-                                                           else if($grade >= 55 && $grade < 60)
+                                                           else if($grade >= 65 && $grade < 70)
                                                            echo htmlentities("B+");
                                                            
-                                                           else if($grade >= 50 && $grade < 55)
+                                                           else if($grade >= 60 && $grade < 55)
                                                            echo htmlentities("B");
    
-                                                           else if($grade >= 45 && $grade < 50)
+                                                           else if($grade >= 55 && $grade < 60)
                                                            echo htmlentities("B-");
    
-                                                           else if($grade >= 40 && $grade < 45)
+                                                           else if($grade >= 50 && $grade < 55)
+                                                           echo htmlentities("C+");
+
+                                                           else if($grade >= 45 && $grade < 50)
                                                            echo htmlentities("C");
+
+                                                           else if($grade >= 40 && $grade < 55)
+                                                           echo htmlentities("D");
    
                                                            else if($grade < 40)
                                                            echo htmlentities("F");
@@ -320,23 +330,29 @@ $cnt++;}
                                                         if($grade>=80)
                                                         echo htmlentities("4.00");
                                                         
-                                                        else if($grade >= 70 && $grade < 80)
+                                                        else if($grade >= 75 && $grade < 80)
                                                         echo htmlentities("3.75");
                                                     
-                                                        else if($grade >= 60 && $grade < 70)
+                                                        else if($grade >= 70 && $grade < 75)
                                                         echo htmlentities("3.50");
 
-                                                        else if($grade >= 55 && $grade < 60)
+                                                        else if($grade >= 65 && $grade < 70)
                                                         echo htmlentities("3.25");
                                                         
-                                                        else if($grade >= 50 && $grade < 55)
+                                                        else if($grade >= 60 && $grade < 65)
                                                         echo htmlentities("3.00");
 
-                                                        else if($grade >= 45 && $grade < 50)
+                                                        else if($grade >= 55 && $grade < 60)
                                                         echo htmlentities("2.75");
 
-                                                        else if($grade >= 40 && $grade < 45)
+                                                        else if($grade >= 50 && $grade < 55)
+                                                        echo htmlentities("2.50");
+
+                                                        else if($grade >= 45 && $grade < 50)
                                                         echo htmlentities("2.25");
+
+                                                        else if($grade >= 40 && $grade < 45)
+                                                        echo htmlentities("2.00");
 
                                                         else if($grade < 40)
                                                         echo htmlentities("0.00");
