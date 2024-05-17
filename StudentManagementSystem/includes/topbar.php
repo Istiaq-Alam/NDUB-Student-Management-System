@@ -1,8 +1,11 @@
- <nav class="navbar top-navbar bg-white box-shadow" style="background-color:#021b3c;height:4px; width:1920px">
+ <nav class="navbar top-navbar bg-white box-shadow" style="background-color:#021b3c;height:4px;">
             	<div class="container-fluid">
-                    <div class="row" >
+                    <div class="row" style="background-color:#afa014;height:3px; weight:100%;" >
+						
                         <div class="navbar-header no-padding" >
+							
                 			<a class="navbar-brand" href="dashboard.php">
+								
 							<img src="https://ndub.edu.bd/wp-content/uploads/2023/06/NDUB-Logo-1.png" alt="logo" width="180" height="37">
     								NDUB Student Portal | Admin</img>
                 			</a>
