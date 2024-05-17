@@ -63,7 +63,7 @@ This system provides a user-friendly and secure platform for Notre Dame Universi
 ![3studentResult](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/a26f3ad5-ded9-454f-97f9-ac0251178c3d)
 
 - ## 🎩 Admin Dashboard -
-![4mainDashboardPage](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/0847d631-18c5-497d-bbb1-720800a36eca)
+![2024-05-17 (1)](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/6e1c501a-4261-4a02-97ee-cbd4ef1fdbd2)
 - Semester Creation -
 ![5newSemester](https://github.com/Istiaq-Alam/NDUB-Student-Management-System/assets/168295675/1c34926b-8bf4-46f6-846d-4bb424b26e1b)
 - Manage Semester -
