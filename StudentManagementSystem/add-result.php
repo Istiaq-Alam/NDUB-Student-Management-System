@@ -14,7 +14,7 @@ if(isset($_POST['submit']))
   
 $class=$_POST['class'];
 $studentid=$_POST['studentid']; 
-$mark=$_POST['marks'];
+$mark=$_POST['marks']; 
 
 
  $stmt = $dbh->prepare("SELECT tblsubjects.SubjectName,tblsubjects.id FROM tblsubjectcombination join  tblsubjects on  tblsubjects.id=tblsubjectcombination.SubjectId WHERE tblsubjectcombination.ClassId=:cid order by tblsubjects.SubjectName");
