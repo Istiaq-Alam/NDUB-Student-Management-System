@@ -1,2 +1,5 @@
 Admin ID - admin
 Password - admin@777
+
+
+*password panel hage some issues*
