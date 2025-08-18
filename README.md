@@ -104,7 +104,7 @@ If you have any feedback, please reach out to us at istiaqlm@gmail.com
 
 ## ✔ Author
 - [@Istiaq-Alam](https://www.github.com/Istiaq-Alam) 
-## ♻ Contributions
+## ♻ Contributors
 - [@Imtiaj-Uddin](https://www.github.com/ImtiajUddin) 
 - [@Evangelist-Richard](https://www.github.com/Evangelist-Richard)
 ## © License
